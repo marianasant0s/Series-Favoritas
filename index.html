@@ -1,98 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Bootstrap</title>
 
     <!--link do CSS do BootStrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
 </head>
+
 <body>
-    
+
     <!--Menu-->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <a class="navbar-brand text-danger" href="#">SERIES</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" 
-        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="#">Home <span class="sr-only">(página atual)</span></a>
-            </li>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sites para assistir
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" target="_blank" href="https://www.primevideo.com/">The vampire diaries</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.primevideo.com/">How i met your mother</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.netflix.com/">Peaky Blinders</a>
+                        <a class="dropdown-item" target="_blank" href="https://www.primevideo.com/">The originals</a>
+                    </div>
+                </li>
+            </ul>
             
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
-              aria-haspopup="true" aria-expanded="false">
-                Sites para assistir
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Serie 1</a>
-                <a class="dropdown-item" href="#">Serie 2</a>
-                <a class="dropdown-item" href="#">Serie 3</a>
-                <a class="dropdown-item" href="#">Serie 4</a>
-                <a class="dropdown-item" href="#">Serie 5</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form>
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Obrigade pela visita! </button>
+          
         </div>
-      </nav>
-   <!--Fim do menu-->
+    </nav>
+    <!--Fim do menu-->
 
-      <!--Grid-->
+    <!--Grid-->
 
-     <div class="container-fluid">
-         
-        <div class="row mt-1">
-            <div class="col md-12 p-1">
-                <div class="bg-danger"> Serie 1 </div>
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <div class="row mt-2 d-flex justify-content-center">
+                <div class="card mr-2 " style="width: 18rem;">
+                    <img class="tm-social" src="assets/tvd.jpg" alt="Imagem de capa do card">
+                    <div class="card-body ">
+                        <h5 class="card-title">The vampire diaries</h5>
+                        <p class="card-text">A cidade fictícia de Mystic Falls, na Virgina, é assombrada por criaturas
+                            sobrenaturais. Damon (Ian Somerhalder) e Stefan Salvatore (Paul Wesley) são irmãos que ganharam a condição de vampiro e desde então procuram manter sua imortalidade em segredo. Ao mesmo tempo, buscam resistir à vontade de atacar seres humanos.</p>
+                        <a target="_blank" href="https://www.primevideo.com/" class="btn btn-primary">Assistir</a>
+                    </div>
+                </div>
+                <div class="card mr-2 " style="width: 18rem;">
+                    <img class="tm-social" src="assets/himtym.jpg" alt="Imagem de capa do card">
+                    <div class="card-body ">
+                        <h5 class="card-title">How i met your mother</h5>
+                        <p class="card-text">Em 2030, o arquiteto Ted Mosby (Josh Radnor) conta a história sobre como
+                             conheceu a mãe dos seus filhos. Ele volta no tempo para 2005, relembrando suas aventuras 
+                             amorosas em Nova York e a busca pela mulher dos seus sonhos.</p>
+                        <a target="_blank" href="https://www.primevideo.com/" class="btn btn-primary">Assistir</a>
+                    </div>
+                </div>
+                <div class="card mr-2" style="width: 18rem;">
+                    <img class="tm-social" src="assets/picublindu.jpg" alt="Imagem de capa do card">
+                    <div class="card-body ">
+                        <h5 class="card-title">Peaky Blinders</h5>
+                        <p class="card-text">Os Peaky Blinders são uma organização criminosa de origem cigana que se passa na cidade de Birmingham, Inglaterra, em 1919, formada vários meses após o final da Primeira Guerra Mundial (1914–1918). A história é centrada na ambição do líder da gangue inglesa, Thomas "Tommy" Shelby (Cillian Murphy).</p>
+                        <a target="_blank" href="https://www.netflix.com/" class="btn btn-primary">Assistir</a>
+                    </div>
+                </div>
+                <div class="card mr-2" style="width: 18rem;">
+                    <img class="tm-social" src="assets/The-Originals-2.jpg" alt="Imagem de capa do card">
+                    <div class="card-body ">
+                        <h5 class="card-title">The originals</h5>
+                        <p class="card-text">Um spin-off de The Vampire Diaries, que se passa em New Orleans. A série é centrada nos irmãos Mikaelson, que são conhecidos como os vampiros originais do mundo: Klaus (Joseph Morgan), Elijah (Daniel Gilles), e Rebekah (Claire Holt). Séculos atrás, eles prometeram ficar juntos para sempre e proteger uns aos outros.</p>
+                        <a target="_blank" href="https://www.primevideo.com/" class="btn btn-primary">Assistir</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="col md-12 p-1 text-light">
-                <div class="bg-dark"> Serie 2 </div>
-            </div>
-
-            <div class="col md-12 p-1">
-                <div class="bg-danger"> Serie 3 </div>
-            </div>
-
-            <div class="col md-12 p-1 text-light">
-                <div class="bg-dark"> Serie 4 </div>
-            </div>
-
-            <div class="col md-12 p-1">
-                <div class="bg-danger">Serie 5 </div>
-            </div>
+            
         </div>
-     </div>
+
+    </div>
 
 
 
 
-    
 
-<!--link do JS do BootStrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-    crossorigin="anonymous"></script>
+    <!--link do JS do BootStrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
-    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous">
+    </script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
-    crossorigin="anonymous"></script>
-    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous">
+    </script>
+<div class="d-flex justify-content-center">
+        Mariana Santos &copy;
+</div>
 </body>
+
 </html>
